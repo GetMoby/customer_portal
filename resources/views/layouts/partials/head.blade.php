@@ -13,6 +13,24 @@
    <link rel="stylesheet" href="/assets/css/select2.css">
    <link rel="stylesheet" href="/assets/css/bootstrap-colorpicker.min.css">
    <link rel="stylesheet" href="/assets/css/Chart.min.css">
+   <!-- Google Tag Manager -->
+   <script>
+      (function(w, d, s, l, i) {
+         w[l] = w[l] || [];
+         w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+         });
+         var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+         j.async = true;
+         j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+         f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-WTWLF8D2');
+   </script>
+   <!-- End Google Tag Manager -->
    <script type="text/javascript">
       window.$crisp = [];
       window.CRISP_WEBSITE_ID = "e044823b-9247-4d4c-a53d-79721b8b91d3";
