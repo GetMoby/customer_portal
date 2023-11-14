@@ -39,6 +39,9 @@ class SonarCustomerPortalPolicy extends Basic
             ->addDirective(Directive::FORM_ACTION, [
                 'self',
                 'www.paypal.com',
+                'https://www.google-analytics.com',
+                'https://www.googletagmanager.com',
+                'https://client.crisp.chat',
             ])
 
             ->addDirective(Directive::UPGRADE_INSECURE_REQUESTS, Value::NO_VALUE)
@@ -46,6 +49,9 @@ class SonarCustomerPortalPolicy extends Basic
             ->addDirective(Directive::SCRIPT, [
                 'self',
                 'js.stripe.com',
+                'https://www.google-analytics.com',
+                'https://www.googletagmanager.com',
+                'https://client.crisp.chat',
             ])
 
 			->addDirective(Directive::STYLE, [
@@ -56,6 +62,9 @@ class SonarCustomerPortalPolicy extends Basic
             ->addDirective(Directive::CONNECT, [
                 'self',
                 'api.stripe.com',
+                'https://www.google-analytics.com',
+                'https://www.googletagmanager.com',
+                'https://client.crisp.chat',
             ]);
     }
 }
