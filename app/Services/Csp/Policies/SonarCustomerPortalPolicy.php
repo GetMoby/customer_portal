@@ -68,5 +68,15 @@ class SonarCustomerPortalPolicy extends Basic
                 'https://client.crisp.chat',
                 'wss://client.relay.crisp.chat',
             ]);
+
+            ->addDirective(Directive::FONT, [
+                'self',
+                'https://client.crisp.chat',
+            ]);
+
+            ->addDirective(Directive::IMG, [
+                'self',
+                'https://client.crisp.chat',
+            ]);
     }
 }
