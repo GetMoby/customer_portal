@@ -18,6 +18,9 @@ services:
       - ./public/assets/img/cover.png:/var/www/html/public/assets/img/cover.png
       - storage:/var/www/html/storage
       - ./public/robots.txt:/var/www/html/public/robots.txt
+      - ./resources/views/layouts/partials/head.blade.php:/var/www/html/resources/views/layouts/partials/head.blade.php
+      - ./resources/views/layouts/full.blade.php:/var/www/html/resources/views/layouts/full.blade.php
+      - ./resources/views/layouts/no-nav.blade.php:/var/www/html/resources/views/layouts/no-nav.blade.php
     env_file:
      - .env
     environment:
