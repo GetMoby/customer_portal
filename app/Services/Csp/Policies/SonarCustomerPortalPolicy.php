@@ -29,6 +29,9 @@ class SonarCustomerPortalPolicy extends Basic
             ->addDirective(Directive::FRAME, [
                 'self',
                 'js.stripe.com',
+                'https://www.google-analytics.com',
+                'https://www.googletagmanager.com',
+                'https://client.crisp.chat',
             ])
 
             ->addDirective(Directive::FRAME_ANCESTORS, Keyword::NONE)
