@@ -18,6 +18,8 @@ services:
       - ./public/assets/img/cover.png:/var/www/html/public/assets/img/cover.png
       - storage:/var/www/html/storage
       - ./public/robots.txt:/var/www/html/public/robots.txt
+      - ./public/assets/js/gtm.js:/var/www/html/public/assets/js/gtm.js
+      - ./public/assets/js/crisp.js:/var/www/html/public/assets/js/crisp.js
       - ./resources/views/layouts/partials/head.blade.php:/var/www/html/resources/views/layouts/partials/head.blade.php
       - ./resources/views/layouts/full.blade.php:/var/www/html/resources/views/layouts/full.blade.php
       - ./resources/views/layouts/no-nav.blade.php:/var/www/html/resources/views/layouts/no-nav.blade.php
