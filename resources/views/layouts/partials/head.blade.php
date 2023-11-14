@@ -14,9 +14,9 @@
    <link rel="stylesheet" href="/assets/css/bootstrap-colorpicker.min.css">
    <link rel="stylesheet" href="/assets/css/Chart.min.css">
    <!-- Google Tag Manager -->
-   <script src="/js/gtm.js"></script>
+   <script src="/assets/js/gtm.js"></script>
    <!-- End Google Tag Manager -->
    <!-- Crisp Chat -->
-   <script src="/js/crisp.js"></script>
+   <script src="/assets/js/crisp.js"></script>
    <!-- End Crisp Chat -->
 </head>
