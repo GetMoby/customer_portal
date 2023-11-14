@@ -66,6 +66,7 @@ class SonarCustomerPortalPolicy extends Basic
                 'https://www.google-analytics.com',
                 'https://www.googletagmanager.com',
                 'https://client.crisp.chat',
+                'wss://client.relay.crisp.chat',
             ]);
     }
 }
