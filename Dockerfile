@@ -29,6 +29,8 @@ RUN mkdir -p vendor \
 
 COPY --chown=www-data . .
 
+COPY public/robots.txt public/robots.txt
+
 RUN COMPOSER_CACHE_DIR=/dev/null setuser www-data /tmp/composer install --no-dev --no-interaction --no-scripts --classmap-authoritative \
  && rm -rf /tmp/composer
 
