@@ -23,6 +23,7 @@ services:
       - ./resources/views/layouts/partials/head.blade.php:/var/www/html/resources/views/layouts/partials/head.blade.php
       - ./resources/views/layouts/full.blade.php:/var/www/html/resources/views/layouts/full.blade.php
       - ./resources/views/layouts/no-nav.blade.php:/var/www/html/resources/views/layouts/no-nav.blade.php
+      - ./app/Services/Csp/Policies/SonarCustomerPortalPolicy.php:/var/www/html/app/Services/Csp/Policies/SonarCustomerPortalPolicy.php
     env_file:
      - .env
     environment:
