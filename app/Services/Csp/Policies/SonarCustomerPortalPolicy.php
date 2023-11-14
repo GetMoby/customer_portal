@@ -68,6 +68,8 @@ class SonarCustomerPortalPolicy extends Basic
             ->addDirective(Directive::IMG, [
                 'self',
                 'https://client.crisp.chat',
+                'https://image.crisp.chat',
+                'https://*.crisp.chat',
             ])
 
             ->addDirective(Directive::CONNECT, [
