@@ -56,6 +56,7 @@ class SonarCustomerPortalPolicy extends Basic
 
 			->addDirective(Directive::STYLE, [
 				'self',
+                'https://client.crisp.chat',
                 'unsafe-inline', // Required for TinyMCE https://www.tiny.cloud/docs/tinymce/6/tinymce-and-csp/
 			])
 
