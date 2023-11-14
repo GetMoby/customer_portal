@@ -11,7 +11,7 @@ class SonarCustomerPortalPolicy extends Basic
 {
 	public function configure()
 	{
-  		$this
+        $this
             // Duplicated from `Basic` because nonce overrides
             // the `unsafe-inline` for styles (see below) and
             // there's no `removeNonceForDirective`.
@@ -60,6 +60,16 @@ class SonarCustomerPortalPolicy extends Basic
                 'unsafe-inline', // Required for TinyMCE https://www.tiny.cloud/docs/tinymce/6/tinymce-and-csp/
 			])
 
+            ->addDirective(Directive::FONT, [
+                'self',
+                'https://client.crisp.chat',
+            ])
+
+            ->addDirective(Directive::IMG, [
+                'self',
+                'https://client.crisp.chat',
+            ])
+
             ->addDirective(Directive::CONNECT, [
                 'self',
                 'api.stripe.com',
@@ -67,16 +77,6 @@ class SonarCustomerPortalPolicy extends Basic
                 'https://www.googletagmanager.com',
                 'https://client.crisp.chat',
                 'wss://client.relay.crisp.chat',
-            ]);
-
-            ->addDirective(Directive::FONT, [
-                'self',
-                'https://client.crisp.chat',
-            ]);
-
-            ->addDirective(Directive::IMG, [
-                'self',
-                'https://client.crisp.chat',
             ]);
     }
 }
